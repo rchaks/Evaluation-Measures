@@ -189,20 +189,7 @@ public class EvaluatorTask1b {
              qevalArray.add(qeval);
         }
         // Now, give the array with "question-level measures" to calculate "set-level measures" (averaging) 
-        System.out.print(
-                AccuracyExactAnswersYesNo(qevalArray)+" "
-                +strictAccuracy(qevalArray)+" "
-                +lenientAccuracy(qevalArray)+" "
-                +meanReciprocalRank(qevalArray)+" "
-                +listPrecision(qevalArray) +" "
-                +listRecall(qevalArray)+" "
-                +listF1(qevalArray)+" "
-                +macroF1ExactAnswersYesNo(qevalArray)+" "
-                +F1ExactAnswersYesNo(qevalArray,true)+" "
-                +F1ExactAnswersYesNo(qevalArray,false));
-        
-        if(this.verbosity){
-            System.out.println();
+        System.out.println();
             System.out.println("YesNo Acc: "+AccuracyExactAnswersYesNo(qevalArray));
             System.out.println("Factoid Strict Acc: "+strictAccuracy(qevalArray));
             System.out.println("Factoid Lenient Acc: "+lenientAccuracy(qevalArray));
@@ -213,7 +200,6 @@ public class EvaluatorTask1b {
             System.out.println("YesNo macroF1: "+macroF1ExactAnswersYesNo(qevalArray));
             System.out.println("YesNo F1 yes: "+F1ExactAnswersYesNo(qevalArray,true));
             System.out.println("YesNo F1 no: "+F1ExactAnswersYesNo(qevalArray,false));
-        }
     }
     
     /** Phase B Measures **/
